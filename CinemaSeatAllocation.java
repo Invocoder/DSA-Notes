@@ -13,7 +13,7 @@ public class CinemaSeatAllocation {
         for (int row : reservedMap.keySet()) {
             Set<Integer> reserved = reservedMap.get(row);
             boolean left = !(reserved.contains(2) || reserved.contains(3) 
-            || reserved.contains(4) || reserved.contains(4));
+            || reserved.contains(4) || reserved.contains(5));
             boolean middle = !(reserved.contains(4) || reserved.contains(5) 
             || reserved.contains(6) || reserved.contains(7));
             boolean right = !(reserved.contains(6) || reserved.contains(7) 
